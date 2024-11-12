@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFÓLIO - Gustavo Nomelini</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/titleLogo.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+<header>
+    <div id="name-container">
+        <h1 id="name">Gustavo Lopes Nomelini</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#graduation">Formação Acadêmica</a></li>
+            <li><a href="#skills">Habilidades / Competências</a></li>
+            <li><a href="#jobs">Histórico Profissional</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Entre em Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="about" class="observe">
+        <h2 class="divider">Sobre Mim</h2>
+        <ul>
+            <li>Olá meu nome é Gustavo Lopes Nomelini, moro em Cascavel-Paraná, Brasil.</li>
+            <li>Atualmente trabalhando como suporte backoffice e analista de sistemas júnior na empresa Stein Telecomunicações.</li>
+            <li>Estudante de Engenharia de Software pela UNINTER.</li>
+            <li>Apaixonado por tecnologias no geral e criar sistemas eficientes, robustos e escaláveis.</li>
+            <li>Amo aprender novas tecnologias e continuar aprimorando minhas habilidades de Desenvolvimento.</li>
+        </ul>
+    </section>
+
+    <section id="graduation" class="observe">
+        <h2 class="divider">Formação Acadêmica</h2>
+        <h3>Engenharia de Software | UNINTER</h3>
+        <ul>
+            <li>Bacharelado em Engenharia de Software</li>
+            <li>JAN/2022 - DEZ/2025</li>
+        </ul>
+    </section>
+
+
+    <section id="skills" class="observe">
+        <h2 class="divider">Habilidades e Competências</h2>
+        <ul>
+            <li>Algoritmos, Lógica de Programação e Estrutura de Dados.</li>
+            <li>Programação Orientada a Objetos.</li>
+            <li>SQL e utilização de Sistemas Gerenciadores de Bancos de Dados.</li>
+            <li>Backend em JAVA utilizando o Framework SPRING.</li>
+            <li>Conceitos de Engenharia de Software como Engenharia de Requisitos, Metodologias Ágeis e Código Limpo.</li>
+            <li>Ingles Avançado com certificado de Cambridge level B2 first.</li>
+        </ul>
+    </section>
+
+    <section id="jobs" class="observe">
+        <h2 class="divider">Histórico Profissional</h2>
+        <h3>Analista Java Júnior</h3>
+        <ul>
+            <li>AGO/2024 - ATUALMENTE</li>
+            <li>Empresa: Stein Telecom.</li>
+            <li>Desenvolvimento Backend em Java usando o framework Spring para integrar a API Ubiquiti Unifi e controlar dispositivos Wi-Fi de última geração através do sistema legado da empresa.
+                <br>Auxílio no suporte técnico, oferecendo suporte aos técnicos de campo a partir do back office.</li>
+        </ul>
+
+        <h3>Assistente Administrativo</h3>
+        <ul>
+            <li>MAR/2020 - JUL/2024</li>
+            <li>Empresa: Lopes & Nomelini.</li>
+            <li>Organização de documentos, suporte na gestão de agendas, atendimento ao cliente, organização de reuniões.
+                <br>Atividades administrativas voltadas para garantir a eficiência das operações internas e externas da empresa.</li>
+        </ul>
+
+    </section>
+
+    <section id="portfolio" class="observe">
+        <h2 class="divider">Portfólio</h2>
+        <div class="project">
+            <h3>Python Binary Calculator</h3>
+            <img src="img/binaryCalculatorPy.png" alt="Project 1" class="portfolio-image">
+            <!-- More project cards -->
+        </div>
+    </section>
+
+    <section id="contact" class="observe">
+        <h2 class="divider">Entre em Contato</h2>
+        <h3>Sinta-se a vontade para entrar em contato comigo via Linkedin, Github ou E-mail.</h3>
+        <h4>Estou aberto para vagas de trabalho e trabalhos Freelance !</h4>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/gustavo-lopes-nomelini-144bb1212/" target="_blank">
+                <img src="img/linkedinLogo.svg" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="https://github.com/gus-nomelini" target="_blank">
+                <img src="img/githubLogo.svg" alt="GitHub"> GitHub
+            </a>
+        </div>
+
+
+        <h3>Envie um E-mail clicando no endereço abaixo ou utilizando o formulário:</h3>
+        <a href="mailto:gustavolnomelini@gmail.com">gustavolnomelini@gmail.com</a>
+
+        <p><b>OBS: Formulário ainda não implementado ! (backend) </b></p>
+        <form id="contact-form" method="POST" action="send-email.php">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar E-mail</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Gustavo Lopes Nomelini. Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

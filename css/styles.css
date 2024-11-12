@@ -1,0 +1,290 @@
+/* General Styles */
+body {
+    font-family: "Roboto Thin", "Times New Roman";
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f0e6fa;  /* Very Light Purple */
+}
+
+header {
+    background-color: #9059a1; /* Deep Lilac */
+    color: #f7f1d3; /* Light Vanilla */
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #f7f1d3; /* Light Vanilla */
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #f7f1d3; /* Light Vanilla */
+    color: #9059a1; /* Deep Lilac */
+    text-decoration: none;
+}
+
+section {
+    padding: 2em 1em;
+    margin: 2em auto;  /* Adds margin to separate sections from header and footer */
+    max-width: 800px;
+    background-color: #f7c8e0; /* Light Pink */
+    color: #4e1949; /* Dark Purple */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #9059a1; /* Deep Lilac */
+}
+
+.project {
+    background-color: #f7f1d3; /* Light Vanilla */
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #9059a1; /* Deep Lilac */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project:hover, .project:focus {
+    background-color: #e9b6d3; /* Slightly darker pink on hover */
+    border-color: #783d7b; /* Darker border on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #4e1949; /* Dark Purple */
+}
+
+form input, form textarea {
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f1d3; /* Light Vanilla */
+}
+
+form button {
+    padding: 0.7em;
+    font-size: 1em;
+    color: #f7f1d3; /* Light Vanilla */
+    background-color: #9059a1; /* Deep Lilac */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover, form button:focus {
+    background-color: #4e1949; /* Dark Purple */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9059a1; /* Deep Lilac */
+    color: #f7f1d3; /* Light Vanilla */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    height: 15px;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Padding for content to avoid footer overlap */
+main {
+    padding-bottom: 60px; /* Adjust based on the height of your footer */
+    padding-top: 2em; /* Adds padding to avoid overlap with header */
+}
+
+.divider {
+    border-bottom: 2px solid #9059a1; /* Change color and thickness as needed */
+    padding-bottom: 1px; /* Add some space between the text and the border */
+    margin-bottom: 1px; /* Space between the border and the next element */
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column; /* Arrange links vertically, use row for horizontal */
+    gap: 10px; /* Space between links */
+    align-items: flex-start; /* Align left; use center for center alignment */
+}
+
+.social-links a {
+    display: flex;
+    align-items: center; /* Center icon with text vertically */
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Text color */
+    font-size: 1.2em; /* Text size */
+}
+
+.social-links img {
+    width: 24px; /* Custom width */
+    height: 24px; /* Custom height */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Making Sparkle Efects for my name ! */
+/* just for practicing my javascript skills */
+#name-container {
+    position: relative;
+    font-size: 1em;
+}
+
+.sparkle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: sparkle 1s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Media Queries : for different device sizes and resolutions */
+/*makes my site responsive - very important*/
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+}
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 1em;
+        margin: 1.5em auto;  /* Adjusted margin for small devices */
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .project {
+        padding: 0.5em;
+        margin: 0.5em 0;
+        border: 1px solid #9059a1; /* Deep Lilac */
+        border-radius: 4px;
+    }
+
+    form input, form textarea {
+        font-size: 0.9em;
+        padding: 0.4em;
+    }
+
+    form button {
+        padding: 0.6em;
+        font-size: 0.9em;
+    }
+}
+
+/* Lightbox */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Scroll Animations */
+.observe {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.observe.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
